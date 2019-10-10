@@ -263,6 +263,18 @@ module.exports = overrideAll(templatedArray('slider', {
         role: 'style',
         description: 'Sets the width (in px) of the border enclosing the slider.'
     },
+	gripbgcolor: {
+        valType: 'color',
+        dflt: constants.gripBgColor,
+        role: 'style',
+        description: 'Sets the background color of the grip.'
+    },
+	gripbordercolor: {
+        valType: 'color',
+        dflt: constants.gripBorderColor,
+        role: 'style',
+        description: 'Sets the color of the grip border.'
+    },
     ticklen: {
         valType: 'number',
         min: 0,

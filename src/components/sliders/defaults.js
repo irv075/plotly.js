@@ -87,6 +87,8 @@ function sliderDefaults(sliderIn, sliderOut, layoutOut) {
     coerce('activebgcolor');
     coerce('bordercolor');
     coerce('borderwidth');
+	coerce('gripbgcolor');
+	coerce('gripbordercolor');
     coerce('ticklen');
     coerce('tickwidth');
     coerce('tickcolor');

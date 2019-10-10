@@ -350,8 +350,8 @@ function drawGrip(sliderGroup, gd, sliderOpts) {
         rx: constants.gripRadius,
         ry: constants.gripRadius,
     })
-    .call(Color.stroke, sliderOpts.bordercolor)
-    .call(Color.fill, sliderOpts.bgcolor)
+    .call(Color.stroke, sliderOpts.gripbordercolor)
+    .call(Color.fill, sliderOpts.gripbgcolor)
     .style('stroke-width', sliderOpts.borderwidth + 'px');
 }
 
@@ -493,7 +493,7 @@ function attachGripEvents(item, gd, sliderGroup) {
         $gd.on('mouseup', function() {
             var sliderOpts = getSliderOpts();
             sliderOpts._dragging = false;
-            grip.call(Color.fill, sliderOpts.bgcolor);
+            grip.call(Color.fill, sliderOpts.gripbgcolor);
             $gd.on('mouseup', null);
             $gd.on('mousemove', null);
 
